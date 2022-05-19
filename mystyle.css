@@ -1,0 +1,162 @@
+:root{
+    --navbg: #1B998B;
+}
+
+body{
+    background-color: #211A1D;
+    font-family: 'Open Sans', 'sans-serif';
+}
+p.p1 {
+    margin: 0.0px 0.0px 0.0px 0.0px; 
+    font: 14.0px Helvetica;
+    color: white;
+    }
+  /*Navigation Bar*/
+  header{
+    background-color: var(--navbg);
+    text-align:center;
+    position: fixed;
+    z-index: 9999;
+    width:100%;
+  }
+  /* Logo */
+  header h1{
+      margin: 0;
+      width: 50px;
+  }
+  /* Nav Elements */
+  nav {
+      position: absolute;
+      text-align: left;
+      top: 100%;
+      left: 0;
+      background: var(--navbg);
+      width: 100%;
+      transform:scale(1, 0);
+      transform-origin: top;
+      transition: transform 100ms ease-in-out;
+  }
+
+  nav ul {
+      margin: 1em;
+      padding: 0;
+      list-style: none;
+  }
+
+  nav li{
+      margin-bottom: 1em;
+      margin-left: 1em;
+  }
+
+  nav a{
+      color: #211A1D;
+      text-decoration: none;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      opacity: 0;
+      transition: opacity 150ms ease-in-out;
+  }
+
+  .nav-toggle{
+      display:none;
+  }
+
+  .nav-toggle-label{
+      position:absolute;
+      top: 0;
+      left: 0;
+      margin-left: 1.5em;
+      height: 100%;
+      display: flex;
+      align-items: center;
+  }
+
+  .nav-toggle-label span,
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+      display:block;
+      background:white;
+      height: 3px;
+      width:2em;
+      border-radius: 2px;
+      position: relative;
+  }
+
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after{
+      content:'';
+      position:absolute;
+  }
+
+  .nav-toggle-label span::before {
+      bottom: 9px;
+  }
+  
+  .nav-toggle-label span::after{
+      top: 9px;
+  }
+
+  nav a:hover{
+      color: white;
+  }
+
+  .nav-toggle:checked ~ nav{
+        transform: scale(1,1);
+  }
+  
+  .nav-toggle:checked ~ nav a{
+      opacity: 1;
+      transition: opacity 200ms ease-in-out 150ms;
+  }
+
+  @media screen and (min-width: 200px)
+  {
+      .nav-toggle-label {
+          display: none;
+      }
+
+      header{
+          display: grid;
+          grid-template-columns: 1fr auto minmax(720px, 3fr) 1fr;
+      }
+
+      header h1{
+          grid-column: 1 / span 2;
+          margin-left: 2em;
+          margin-top: 3px;
+          margin-bottom: 3px;
+      }
+
+      nav{
+          grid-column: 3/4;
+          all: unset;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          margin-left: 0;
+      }
+
+      nav ul{
+          display: flex;
+          justify-content: flex-end;
+      }
+
+      nav li{
+          margin-left: 3em;
+          margin-bottom:0;
+      }
+
+      nav a{
+          opacity: 1;
+      }
+  }
+  /*Main Content */
+
+  .content{
+    max-width: 80%;
+    margin: auto;
+    padding:10px;
+    font: 14.0px 'Open Sans', sans-serif;
+    text-align: center;
+    color: white;
+  }
