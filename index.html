@@ -7,6 +7,7 @@
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="2113.4">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="mystyle.css">
   <style type="text/css">
     p.p1 {
       margin: 0.0px 0.0px 0.0px 0.0px; 
@@ -28,11 +29,25 @@
       float: right;
       color:#211A1D;
       text-align: center;
-      padding: 6px 24px 6px 24px;
+      padding: 36px 24px 0px 24px;
       text-decoration: none;
       font-family: 'Open Sans', sans-serif;
       font-size: 16px;
       text-transform:uppercase;
+      position:relative;
+    }
+
+    .navigation a:hover{
+        color:#211A1D;
+    }
+
+    .navigation a::before{
+        content:'';
+        display: block;
+        height: 5px;
+        width: 100%;
+        background-color:#211A1D;
+        position: absolute;
     }
     /*Main Content */
 
@@ -49,13 +64,16 @@
 <body style ="background-color: #211A1D;">
 <div class = "header">
   <div class="navigation">
-    <a href="proposal.html">Proposal</a>
-    <a href="peer-evaluation.html">Peer Evaluation</a>
-    <a href="minutes.html">Minutes</a>
-    <a href="project-details.html">Project Details</a>
-    <a href="rubric.html">Rubric</a>
-    <a href="bibliography.html">Bibliography</a>
-    <a href="team.html">Team</a>
+    <img src="images/logo.png" alt="logo" width="125" style="padding-left: 5%; padding-top: 6px; padding-bottom: 6px; vertical-align:bottom;">
+    <ul>
+    <li><a href="proposal.html">Proposal</a></li>
+    <li><a href="peer-evaluation.html">Evaluation</a></li>
+    <li><a href="minutes.html">Minutes</a></li>
+    <li><a href="project-details.html">Project Details</a></li>
+    <li><a href="rubric.html">Rubric</a></li>
+    <li><a href="bibliography.html">Bibliography</a></li>
+    <li><a href="team.html">Team</a></li>
+    </ul>
   </div>
 </div>
 
