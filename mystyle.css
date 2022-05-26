@@ -180,6 +180,7 @@ body{
     margin-left:25%;
     margin-right:25%;
     list-style-type:none;
+    line-height: 175%;
 } 
 
 .content li{
@@ -187,11 +188,21 @@ body{
     text-indent: 5.0px; 
 }
 
-.content ul li ul{
-    font-size: 150.0px
+.content li:before{
+    content: "-";
+    padding-right: 16.0px;
+    text-indent: -5.0px;
 }
 
-.content li:before{
-    content: "-  ";
-    text-indent: -5.0px;
+.content ul li ul{
+    list-style-type:circle;
+    text-align: left;
+    padding-left: 8%;
+    margin: 0;
+}
+
+.content ul li ul li:before{
+    content: "";
+    padding-right: 0.0px;
+    text-indent: 0.0px;
 }
