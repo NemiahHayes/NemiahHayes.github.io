@@ -1,14 +1,16 @@
-# NemiahHayes.github.io
+# A Look on Privacy
+A Research Project by Nemiah Hayes & Namar Dhaliwal
+
 Website Repository for Assignment 3
 
-Adding Research info into here
-
-
-
+TODO:
+ - Research
+ - Finish general HTML
+ - Figure out site map
+ - Finish Team page, Project page to come
+ - Properly sort jobs
 
 //Write all your stuff above this.
-//I also need to update the proposal and stuff since the group members are outdated
-
 //Proposal:
 Privacy
 
@@ -41,17 +43,12 @@ o	Interact with technology in general (smart devices, other people’s devices, 
 Team Members:
 
 Nemiah Hayes:
--	Main development of Website and Repository
+-	Development of Website and Repository
 -	Research on general privacy topics
 -	Communications
 -	Keeping Bibliography up to date
 
-Wiremu Tukukino:
--	Help with development
+Namar Dhaliwal
+-	Development of Website and Repository
 -	Research on systems around privacy
 -	Keeping Bibliography up to date
-
-Shiwei Chen:
--	Help with development
--	Research on real world events and privacy
--	Keep Bibliography up to date
