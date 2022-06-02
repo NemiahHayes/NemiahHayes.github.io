@@ -1,12 +1,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="Content-Style-Type" content="text/css">
   <title>Privacy - Nemiah & Namar</title>
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="2113.4">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css'>
   <link rel="stylesheet" href="mystyle.css">
 </head>
 <body>
@@ -22,19 +25,85 @@
       <li><a href="rubric.html">Rubric</a></li>
       <li><a href="team.html">Team</a></li>
       <li><a href="biblio.html">Biblio</a></li>
-    </ul>  
+    </ul>
   </nav>
   <label for="nav-toggle" class="nav-toggle-label">
     <span></span>
   </label>
 </header>
-
-<div class="content">
-<p>Just leaving this here for now :)
- <br>
- <a href="proposal.html">Proposal Slide</a> 
-</p>
-</div>
+<br>
+<br>
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="picture">
+        <img src="images/Slide1.jpg" alt="">
+      </div>
+      <div class="detail">
+        <h3>1</h3>
+        <span></span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="picture">
+        <img src="images/Slide2.jpg" alt="">
+      </div>
+      <div class="detail">
+        <h3>2</h3>
+        <span></span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="picture">
+        <img src="images/Slide3.jpg" alt="">
+      </div>
+      <div class="detail">
+        <h3>3</h3>
+        <span></span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="picture">
+        <img src="images/Slide4.jpg" alt="">
+      </div>
+      <div class="detail">
+        <h3>4</h3>
+        <span></span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="picture">
+        <img src="images/Slide5.jpg" alt="">
+      </div>
+      <div class="detail">
+        <h3>5</h3>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+  <br>
+ </div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js'></script>
+<script>
+var swiper = new Swiper(".swiper-container", {
+effect: "coverflow",
+grabCursor: true,
+centeredSlides: true,
+slidesPerView: "auto",
+coverflowEffect: {
+  rotate: 20,
+  stretch: 0,
+  depth: 350,
+  modifier: 1,
+  slideShadows: true,
+},
+pagination: {
+  el: ".swiper-pagination",
+  clickable: true
+}
+});
+</script>
 
 </body>
 </html>
