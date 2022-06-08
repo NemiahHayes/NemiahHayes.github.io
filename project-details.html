@@ -30,30 +30,37 @@
 </header>
 
 <div class = "content">
-    <h2>A Study on Privacy</h2> 
-    <h3>How does the day-to-day use of technology affect our privacy? </h3>
+    <h3>How is our data being gathered?</h3>
     <p>
-      Modern Society has come to largely rely on the use of modern devices, getting by without the use of a
-      smart phone and internet connection has become extremely difficult if not impossible. This has given more
-      power to information, and more access to that information than ever before. This project looks at how they're
-      gathering this information, social media / big corporations play in this, etc. --- WIP ---
+      Before investigating further we wanted to take a peek at how the inner workings of data gathering really worked. An article from Master’s 
+      in Data Science (Master’s in Data Science, 2020)<a href="biblio.html">[1]</a> expresses that a majority of data tracking comes from things like cookies, and device 
+      fingerprinting, or smaller methods like scripts, browsing history analysis, and even direct forms like questionnaires and surveys. While 
+      popular methods such as cookies allow you, for the most part, to block them, a lot of these methods actually go unnoticed and will 
+      only be mentioned in things privacy policies and terms of use- contracts that are long and so filled with layman denying language that 
+      they’re barely ever read. That’s also assuming that they’re even mentioned at all. 
     </p>
-    <h3>How is our information gathered?</h3>
     <h4>Cookies</h4> 
     <p>
-    Cookies are how information is stored locally on your computer. They're sent and received by the 
-    website's server, and store things like login information, shopping carts, etc. Another thing it's 
-    useful for is collecting information on how a consumer may behave or interact with a website. 
+      Cookies are easily the most well-known and popular method for information gathering. They’re a (usually) small file that’s locally stored on your device,
+       it tends to contain data like your login info, browsing behaviours, and website settings. Without cookies, this information would usually get lost after 
+       you left the page, however, with cookies, the information is stored until the cookie is cleared or deleted. The original creator had actually created cookies
+        to be used with a website store. He wanted users to be able to store items in a shopping cart, leave the website, and have the shopping cart still contain 
+        all the items that they had left there previously. 
+    <br>
+      While with normal use cookies are completely fine and only serve to improve the user experience, it’s in their abuse of them that they become dangerous. 
+      If we go back to how cookies are used, they’re locally stored files on your computer which are sent back and forth between your hard drive and the website’s
+      server. When they’re called to the server they’re usually stored on those drives. So any information that is being put inside those cookie files can be 
+      accessed by anyone on the server-side of things meaning they can essentially do what they like with that cookie file. This has become a large problem in recent
+      times as advertisers and marketing companies, in particular, are always looking to profit off of user information. When you have a file that’s as accessible 
+      and powerful as a cookie file it becomes very easy to look at something like browsing activities and gather someone’s interests and behaviours in order to cater
+      your marketing to them. 
+
     </p>
     <h4>Browser Fingerprinting</h4>
     <p>
-    Browser fingerprinting is a method which essentially ID's your computer hardware or browser, and uses 
-    that information to identify you and track your information. This is how a large majority of websites 
-    personalize information and advertisements that they send to you. Fingerprinting while in the past was 
-    usually done with cookies, can also be done with HTML code.
-
-    Information gathering can also be done through your browser history, scripts, and even questionnaires 
-    and social media use.
+      Device fingerprinting is a method that looks at your device’s unique ID and tracks your activities and information through knowing what device is performing what activity. 
+      Fingerprinting usually uses javascript to look at unique identifiers such as OS, browser, device, and even IP to figure out if the user is a repeat or new visitor. While this 
+      method doesn’t prove to be as accurate as cookies, unlike cookies, this technique is done server-side and doesn’t require a file to be locally stored on your device. 
     </p>
 
 </div>
