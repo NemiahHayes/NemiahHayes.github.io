@@ -21,7 +21,6 @@ Namar Dhaliwal
 
 TODO:
  - HTML
-     - Presentation Slides on Webpage
      - Link references to Bibliography
      - Insert screenshots into minutes
      - Insert Google doc links into minutes
