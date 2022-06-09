@@ -22,8 +22,6 @@ Namar Dhaliwal
 TODO:
  - HTML
      - Link references to Bibliography
-     - Insert screenshots into minutes
-     - Insert Google doc links into minutes
      - Rubric Page
  - Report
      - Iron out and finish up writing
