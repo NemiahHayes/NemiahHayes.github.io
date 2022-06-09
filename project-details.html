@@ -33,7 +33,7 @@
     <h3>How is our data being gathered?</h3>
     <p>
       Before investigating further we wanted to take a peek at how the inner workings of data gathering really worked. An article from Master’s 
-      in Data Science (Master’s in Data Science, 2020)<a href="biblio.html">[1]</a> expresses that a majority of data tracking comes from things like cookies, and device 
+      in Data Science (Master’s in Data Science, 2020)<a href="biblio.html">[2]</a> expresses that a majority of data tracking comes from things like cookies, and device 
       fingerprinting, or smaller methods like scripts, browsing history analysis, and even direct forms like questionnaires and surveys. While 
       popular methods such as cookies allow you, for the most part, to block them, a lot of these methods actually go unnoticed and will 
       only be mentioned in things privacy policies and terms of use- contracts that are long and so filled with layman denying language that 
@@ -47,6 +47,7 @@
         to be used with a website store. He wanted users to be able to store items in a shopping cart, leave the website, and have the shopping cart still contain 
         all the items that they had left there previously. 
     <br>
+    <br>
       While with normal use cookies are completely fine and only serve to improve the user experience, it’s in their abuse of them that they become dangerous. 
       If we go back to how cookies are used, they’re locally stored files on your computer which are sent back and forth between your hard drive and the website’s
       server. When they’re called to the server they’re usually stored on those drives. So any information that is being put inside those cookie files can be 
@@ -58,9 +59,23 @@
     </p>
     <h4>Browser Fingerprinting</h4>
     <p>
-      Device fingerprinting is a method that looks at your device’s unique ID and tracks your activities and information through knowing what device is performing what activity. 
-      Fingerprinting usually uses javascript to look at unique identifiers such as OS, browser, device, and even IP to figure out if the user is a repeat or new visitor. While this 
-      method doesn’t prove to be as accurate as cookies, unlike cookies, this technique is done server-side and doesn’t require a file to be locally stored on your device. 
+      Device fingerprinting is a method that looks at your device’s unique ID and tracks your activities and information by semi-accurately knowing what device is performing
+       what activity. Fingerprinting usually uses javascript to look at unique identifiers such as your OS, browser, hardware, device, and even IP to figure out if the user
+        is a repeat or new visitor. While this method doesn’t prove to be as accurate as cookies, unlike cookies, this technique is done server-side and doesn’t require a 
+        file to be locally stored on your device<a href="biblio.html">[3]</a>. Device fingerprinting methods are able to track and gather your data without even your web browser being able to detect it. 
+      <br>
+      <br>
+      As your data is collected and stored this creates a device hash<a href="biblio.html">[4]</a>. These device hashes are used to identify your device, generally, complex fingerprinting systems 
+      will use multiple hashes in order to identify you. Generally, this information can be used on the developer end in order to aid them with cyber-security problems. 
+      For example, if a fraudulent user were to make purchases with a set of stolen credit cards, device fingerprinting would aid a company in catching that fraudulent user.
+       As activities are tracked their systems are able to discern whether something is suspicious, those activities are logged and then sent to fraud managers, who may 
+       investigate the activity. 
+       <br>
+       <br>
+      A problem with data arises particularly with device fingerprinting, however. In Europe, there is a particular regulation concerning privacy called the “General Data
+       Protection Regulations”<a href="biblio.html">[5]</a>. While this regulation requires that websites ask for permission to use the aforementioned cookies, the law is a bit more ambiguous 
+       when it comes to device fingerprinting. There’s no law that explicitly states that they have to ask permission in order to enforce device fingerprinting, they do,
+        however, have to be transparent in what data they’re gathering if they plan on using device fingerprinting to potentially gather any personal information<a href="biblio.html">[6]</a>. 
     </p>
 
 </div>
