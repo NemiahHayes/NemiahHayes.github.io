@@ -22,7 +22,8 @@ Namar Dhaliwal
 TODO:
  - HTML
      - Link references to Bibliography
-     - Rubric Page
+     - Redo Report Referencing
+     - Ethics
  - Report
      - Iron out and finish up writing
  - Google Doc
