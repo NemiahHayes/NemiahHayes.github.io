@@ -1,5 +1,6 @@
 :root{
     --navbg: #1B998B;
+    --linkcol: #68B0DC;
 }
 
 body{
@@ -147,8 +148,8 @@ body{
           opacity: 1;
       }
   }
-  /*Main Content */
-
+  
+/*Main Content */
 .content{
     color: white;
     text-align: center;
@@ -183,9 +184,15 @@ body{
 }
 
 .content p{
-    margin-left:20%;
-    margin-right:20%;
+    margin-left:27.5%;
+    margin-right:27.5%;
     text-align:left;
+}
+
+.content p a{
+    font-size: 12.0px;
+    vertical-align: super;
+    color: var(--linkcol);
 }
 
 .content ul{
@@ -226,32 +233,66 @@ body{
     color: white;
 }
 
+.content img{
+    margin-bottom:5%;
+    width:auto;
+}
+/*Minutes Stuff*/
+.minutes{
+    color: white;
+    text-align: center;
+    padding-top: 50.0px;
+    font-size: 16.0px;
+    font-family: 'Open Sans', 'sans-serif';
+}
+
+.minutes p{
+    margin-left:30%;
+    margin-right:30%;
+    text-align:left;
+}
+
+.minutes a{
+    color: var(--linkcol);
+}
+
+.minutes ul{
+    text-align: left;
+    margin-left:25%;
+    margin-right:25%;
+    list-style-type:none;
+    line-height: 175%;
+}
+
+.minutes li{
+    text-align:left;
+}
+
 /*Slider Stuff */
 .swiper-container {
-  width: 100%;
-  padding-top: 350px;
-  padding-bottom: 50px;
+  width: 75%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
 }
 
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 1800px;
+  width: 75%;
   background-color: #222222;
   overflow: hidden;
   border-radius: 8px;
+  margin-bottom: 2.5%;
 }
 
 .picture {
-  width: 1800px;
-  height: 1000px;
+  width: 100%;
   overflow: hidden;
 }
 
 .picture img {
   display: block;
   width: 100%;
-  height: 100%;
      object-fit: cover;
 }
 
@@ -263,13 +304,13 @@ body{
 
 .detail h3 {
   margin: 0;
-  font-size: 20px;
+  font-size: 12px;
   color: #fff
 }
 
 .detail span {
   display: block;
-  font-size: 16px;
+  font-size: 12px;
   color: #fff;
 }
 
